@@ -16,4 +16,19 @@ int variables() {
     std::cout << "d2=" << d2 << std::endl;
     int i5 = d1; // the values after the decimal is truncated to fit an integer type
     std::cout << "i5=" << i5 << std::endl;
+
+    char c1 = 'a';
+    std::cout << "c1: " << i5 << std::endl;
+
+    bool flag = false;
+    std::cout << "flag:" << flag << std::endl;
+    flag = i1;
+    std::cout << "flag as a bool of i1:" << flag << std::endl;
+    flag = d1;
+    std::cout << "flag as bool of d1: " << flag << std::endl;
+
+    auto a4 = "s"; // this is of type const char*
+    // this is a C style string
+    // the compiler interprets anything with a double quotes as a collection of characters
+    // even "b" would be 2 characters, the b and the null terminator
 }
