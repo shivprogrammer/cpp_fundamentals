@@ -19,7 +19,7 @@ int variables() {
     char c1 = 'a';
     std::cout << "c1: " << i5 << std::endl;
 
-    bool flag = false;
+    bool flag = false; /* false just prints out as 0 when sent to cout */
     std::cout << "flag:" << flag << std::endl;
     flag = i1;
     std::cout << "flag as a bool of i1:" << flag << std::endl;
@@ -31,4 +31,21 @@ int variables() {
     this is a C style string
     the compiler interprets anything with a double quotes as a collection of characters
     even "b" would be 2 characters, the b and the null terminator */
+    auto a4 = 3L; /* the L denotes that this is a long variable */
+    auto a7 = 1'000'000'000'000;
+    /* the values in between are just digit
+       separators that are just for readability, does not change compilation
+    */
+
+    unsigned char n1 = 128;
+    std::cout << "n1: " << n1 << "\n";
+    char n2 = 128;
+    /* this will return a -128 because of an underflow error
+     * because char can only hold -128 to 127
+     * LESSON: BE VERY CAREFUL AND AWARE WHEN DEFINING TYPES
+     * AND ASSOCIATING VARIBLES WITH THEM
+     * THERE WILL BE NO ERROR IN THE COMPILER
+     * JUST A STRANGE CONVERSION THAT WILL RESULT IN VERY ODD RESULTS
+     * */
+    std::cout << "n2: " << n2 << "\n";
 }
