@@ -20,7 +20,9 @@ int variables() {
     
     // int i5 = d1;
     // the values after the decimal is truncated to fit an integer type
+    int i5 = static_cast<int>(d1);
     std::cout << "i5=" << i5 << std::endl;
+
 
     char c1 = 'a';
     std::cout << "c1: " << i5 << std::endl;
@@ -37,7 +39,7 @@ int variables() {
     // this is of type const char*, a C style string
     // the compiler interprets anything with a double quotes as a collection of characters
     // even "b" would be 2 characters, the b and the null terminator
-    auto a4 = 3L;
+    auto a5 = 3L;
     // the L denotes that this is a long variable
     auto a7 = 1'000'000'000'000;
     // the values in between are just digit
